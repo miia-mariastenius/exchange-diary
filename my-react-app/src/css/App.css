@@ -22,15 +22,15 @@ p {
 }
 
 .navbar {
-  max-width: 500px;
+  max-width: 600px;
   min-width: 300px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0 auto;
+  margin: 1rem auto;
   background-color: var(--tertiary-bg-color);
-  padding: 1rem;
-  border-radius: 30px;
+  padding: 1.5rem;
+  border-radius: 40px;
   box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.25);
 }
 
@@ -40,15 +40,26 @@ p {
   align-items: center;
   justify-content: center;
   margin: 0 auto;
+  gap: 3rem;
 }
 
 .nav-links li {
   margin-right: 1rem;
+  text-align: center;
 }
 
 .nav-links a {
-  color: var(--primary-color);
+  color: var(--text-color);
   text-decoration: none;
+}
+
+.nav-links a:hover {
+  color: var(--primary-color);
+}
+
+.main-page a{
+  font-weight: bold;
+  color: var(--primary-color) !important;
 }
 
 .header-container {
@@ -57,6 +68,17 @@ p {
   width: 50%;
   margin: 0 auto;
   text-align: center;
+}
+
+h1 {
+  color: var(--primary-color);
+  margin: 1rem 0;
+}
+
+h2 {
+  margin: 0;
+  padding: 1rem 0;
+  color: var(--secondary-bg-color);
 }
 
 .secondary-container {

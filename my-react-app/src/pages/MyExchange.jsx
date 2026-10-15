@@ -18,7 +18,7 @@ function MyExchange() {
       </div>
       <div className="tertiary-container">
         <div className="contact-form">
-          <h2>More about my exchange</h2>
+          <h2>Contact me</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin luctus imperdiet erat in efficitur. Cras ex neque, dapibus nec malesuada in, sollicitudin vitae justo. </p>
           <form className="form">
             <label htmlFor="name">Name:</label>
