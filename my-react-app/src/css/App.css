@@ -65,11 +65,13 @@ p {
 
 .secondary-container {
   background-color: var(--secondary-bg-color);
+  padding: 0 9rem;
 }
 
 .card-container {
   display: flex;
-  gap: 1rem;
+  justify-content: center;
+  gap: 4rem;
   padding: 1rem;
 }
 
@@ -79,7 +81,7 @@ p {
   background-color: var(--tertiary-bg-color);
   border: 1px solid #476B54;
   border-radius: 10px;
-  width: 300px;
+  width: 360px;
 }
 
 .card-text {
@@ -90,9 +92,10 @@ p {
 
 .read-more-button {
   float: right;
-  margin: 0 auto;
+  margin-left: auto;
   background-color: var(--button-color);
   color: #FFFFFF;
+  margin-top: 1rem;
   padding: 0.5rem 1rem;
   border: none;
   border-radius: 30px;
@@ -102,9 +105,19 @@ p {
 }
 
 .tertiary-container{
+  margin: 0 auto;
+  padding: 1rem;
   background-color: var(--dark-bg-color);
   color: #FFFFFF;
-  padding: 1rem;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  width: 50%;
+  margin: 0 auto;
 }
 
 .form{
