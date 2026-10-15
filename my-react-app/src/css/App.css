@@ -34,3 +34,11 @@ body {
   color: #567B67;
   text-decoration: none;
 }
+
+.header-container {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+}
