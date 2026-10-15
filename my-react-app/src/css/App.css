@@ -1,8 +1,18 @@
+:root {
+  --primary-color: #567B67;
+  --background-color: #FFFFFF;
+  --secondary-bg-color: #97B7A3;
+  --button-color: #1e1e1e;
+  --text-color: #000000;
+    /* MUUTA */
+  --font-family: 'Inter', sans-serif;
+}
+
 body {
-  /* MUUTA */
-  font-family: 'Inter', sans-serif;
   color: #000;
-  background-color: #FFFFFF;
+  background-color: var(--background-color);
+  font-family: var(--font-family);
+  margin: 0;
 }
 
 .navbar {
@@ -31,7 +41,7 @@ body {
 }
 
 .nav-links a {
-  color: #567B67;
+  color: var(--primary-color);
   text-decoration: none;
 }
 
@@ -41,4 +51,46 @@ body {
   width: 50%;
   margin: 0 auto;
   text-align: center;
+}
+
+.content {
+  /* margin: 0; */
+}
+
+.secondary-container {
+  background-color: var(--secondary-bg-color);
+}
+
+.card-container {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: #FCFCFC;
+  border: 1px solid #476B54;
+  border-radius: 10px;
+  width: 300px;
+}
+
+.card-text {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.read-more-button {
+  float: right;
+  margin: 0 auto;
+  background-color: var(--button-color);
+  color: #FFFFFF;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }

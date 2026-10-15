@@ -10,7 +10,11 @@ function MyExchange() {
       </div>
       <div className="secondary-container">
         <h2>The duration of my exchange is chopped into chunks</h2>
-        <Card />
+        <div className="card-container">
+          <Card />
+          <Card />
+          <Card />
+        </div>
       </div>
     </div>
   );
