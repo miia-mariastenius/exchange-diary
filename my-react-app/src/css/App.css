@@ -3,6 +3,7 @@
   --background-color: #FFFFFF;
   --secondary-bg-color: #97B7A3;
   --tertiary-bg-color: #FCFCFC;
+  --dark-bg-color: #2A2A2A;
   --button-color: #1e1e1e;
   --text-color: #000000;
     /* MUUTA */
@@ -97,6 +98,43 @@ p {
   border-radius: 30px;
   text-decoration: none;
   font-weight: bold;
+  box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.tertiary-container{
+  background-color: var(--dark-bg-color);
+  color: #FFFFFF;
+  padding: 1rem;
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.radio-group {
+  flex-direction: column;
+}
+
+input, textarea {
+  padding: 0.5rem;
+  border: 1px solid #000000;
+  border-radius: 8px;
+}
+
+input[type='radio'] {
+    accent-color: #232323;
+}
+
+.submit-button {
+  background-color: #7EA98F;
+  padding: 0.5rem 1rem;
+  width: 80px;
+  border: none;
+  border-radius: 30px;
+  text-decoration: none;
   box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 

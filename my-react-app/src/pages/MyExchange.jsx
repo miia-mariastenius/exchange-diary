@@ -16,6 +16,32 @@ function MyExchange() {
           <Card />
         </div>
       </div>
+      <div className="tertiary-container">
+        <div className="contact-form">
+          <h2>More about my exchange</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin luctus imperdiet erat in efficitur. Cras ex neque, dapibus nec malesuada in, sollicitudin vitae justo. </p>
+          <form className="form">
+            <label htmlFor="name">Name:</label>
+            <input type="text" id="name" name="name" required />
+            <label htmlFor="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+            <label htmlFor="phone">Phone number:</label>
+            <input type="tel" id="phone" name="phone" />
+            <label htmlFor="method">Preferred contact method:</label>
+            <div className="radio-group">
+              <input type="radio" id="method-none" name="contact-method" value="method-none" required checked="checked" />
+              <label htmlFor="method-none">No preference</label><br/>
+              <input type="radio" id="method-email" name="contact-method" value="method-email" />
+              <label htmlFor="method-email">Email</label><br/>
+              <input type="radio" id="method-phone" name="contact-method" value="method-phone" />
+              <label htmlFor="method-phone">Phone</label>
+            </div>
+            <label htmlFor="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button className="submit-button" type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
     </div>
   );
 }
