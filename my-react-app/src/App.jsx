@@ -3,6 +3,7 @@ import { useState } from 'react'
 import './css/App.css';
 import Navbar from './components/Navbar.jsx';
 import MyExchange from './pages/MyExchange.jsx';
+import Footer from './components/Footer.jsx';
 
 function App() {
 
@@ -15,6 +16,9 @@ function App() {
         <div className="content">
           <MyExchange />
         </div>
+        <footer>
+          <Footer />
+        </footer>
       </div>
     </>
   )
