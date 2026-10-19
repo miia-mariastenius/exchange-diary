@@ -10,13 +10,13 @@ function MyExchange() {
       </div>
       <div className="secondary-container">
         <div className="home-container">
-        <h2>The duration of my exchange is chopped into chunks</h2>
-        <div className="card-container">
-          <Card />
-          <Card />
-          <Card />
+          <h2>The duration of my exchange is chopped into chunks</h2>
+          <div className="card-container">
+            <Card />
+            <Card />
+            <Card />
+          </div>
         </div>
-      </div>
       </div>
       <div className="tertiary-container">
         <div className="contact-form">

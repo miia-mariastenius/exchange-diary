@@ -8,7 +8,7 @@
   --accordion-bg-color: #D9D9D9;
   --text-color: #000000;
   --header-color: #1E1E1E;
-    /* MUUTA */
+  /* MUUTA */
   --font-family: 'Inter', sans-serif;
 }
 
@@ -47,8 +47,8 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 0;
   margin: 0 auto;
-  gap: 3rem;
 }
 
 .nav-links li {
@@ -71,7 +71,7 @@ p {
   background-color: var(--background-color);
 }
 
-.main-page a{
+.main-page a {
   font-weight: bold;
   color: var(--primary-color) !important;
 }
@@ -79,7 +79,6 @@ p {
 .header-container {
   display: flex;
   flex-direction: column;
-  width: 50%;
   margin: 0 auto;
   text-align: center;
 }
@@ -99,13 +98,10 @@ h2 {
   background-color: var(--secondary-bg-color);
 }
 
-.home-container{
-  padding: 0 9rem;
-}
 
 .card-container {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   gap: 4rem;
   padding: 1rem;
 }
@@ -139,7 +135,7 @@ h2 {
   box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
-.tertiary-container{
+.tertiary-container {
   margin: 0 auto;
   background-color: var(--dark-bg-color);
   color: #FFFFFF;
@@ -148,7 +144,6 @@ h2 {
 .contact-form {
   align-items: center;
   gap: 1rem;
-  width: 50%;
   margin: 0 auto;
 }
 
@@ -156,7 +151,7 @@ h2 {
   color: var(--secondary-bg-color);
 }
 
-.form{
+.form {
   display: flex;
   flex-direction: column;
   margin-top: 1rem;
@@ -184,7 +179,8 @@ label {
   flex-direction: column;
 }
 
-input, textarea {
+input,
+textarea {
   padding: 0.5rem;
   margin-bottom: 1rem;
   margin-top: 0.3rem;
@@ -193,7 +189,7 @@ input, textarea {
 }
 
 input[type='radio'] {
-    accent-color: #232323;
+  accent-color: #232323;
 }
 
 .submit-button {
@@ -214,17 +210,16 @@ input[type='radio'] {
 }
 
 .blog-container {
-  padding: 0 9rem;
+  /* padding: 0 9rem; */
 }
 
 .blog-secondary-container {
-  padding: 0 9rem;
+  /* padding: 0 9rem; */
   margin: 0 auto;
   background-color: var(--dark-bg-color) !important;
 }
 
-.light-text
-{
+.light-text {
   color: #FFFFFF !important;
 }
 
@@ -271,6 +266,10 @@ input[type='radio'] {
   box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
+.statement-container {
+  margin: 0 auto;
+}
+
 .footer-container {
   display: flex;
   flex-direction: column;
@@ -287,7 +286,8 @@ input[type='radio'] {
   margin-top: 1rem;
 }
 
-.instagram-button, .twitter-button {
+.instagram-button,
+.twitter-button {
   background-color: #D9D9D9;
   color: #000000;
   padding: 0.5rem 1rem;
@@ -296,4 +296,96 @@ input[type='radio'] {
   border-radius: 10px;
   text-decoration: none;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+@media only screen and (max-width: 374px) {
+  .header-container, .contact-form, .statement-container {
+    width: 90%;
+  }
+
+  .blog-container,
+  .blog-secondary-container, .button-container {
+    padding: 0 1rem;
+  }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .nav-links {
+    gap: 1rem;
+  }
+  .header-container, .contact-form, .statement-container {
+    width: 90%;
+  }
+
+  .home-container, .blog-container,
+  .blog-secondary-container, .button-container {
+    padding: 0 1rem;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .nav-links {
+    gap: 3rem;
+  }
+
+  .header-container, .contact-form, .statement-container {
+    width: 550px;
+  }
+
+  .home-container, .blog-container,
+  .blog-secondary-container, .button-container {
+    padding: 0 1rem;
+  }
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+
+  .header-container, .contact-form, .statement-container {
+    width: 600px;
+  }
+
+  .home-container {
+    padding: 0 5rem;
+  }
+
+  .blog-container,
+  .blog-secondary-container, .button-container {
+    padding: 0 1rem;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .nav-links {
+    gap: 3rem;
+  }
+
+  .header-container, .contact-form, .statement-container {
+    width: 900px;
+  }
+
+  .home-container {
+    padding: 0 5rem;
+  }
+
+  .blog-container,
+  .blog-secondary-container, .button-container {
+    padding: 0 9rem;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .nav-links {
+    gap: 3rem;
+  }
+
+  .home-container {
+    padding: 0 9rem;
+  }
 }
