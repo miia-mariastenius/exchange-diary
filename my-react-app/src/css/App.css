@@ -12,6 +12,12 @@
   --font-family: 'Inter', sans-serif;
 }
 
+.app-root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
 body {
   color: #000;
   background-color: var(--background-color);
@@ -59,6 +65,12 @@ p {
   color: var(--primary-color);
 }
 
+.content {
+  width: 100vw;
+  min-height: 100vh;
+  background-color: var(--background-color);
+}
+
 .main-page a{
   font-weight: bold;
   color: var(--primary-color) !important;
@@ -85,7 +97,6 @@ h2 {
 
 .secondary-container {
   background-color: var(--secondary-bg-color);
-  /* padding: 0 9rem; */
 }
 
 .home-container{
@@ -130,7 +141,6 @@ h2 {
 
 .tertiary-container{
   margin: 0 auto;
-  padding: 1rem;
   background-color: var(--dark-bg-color);
   color: #FFFFFF;
 }
