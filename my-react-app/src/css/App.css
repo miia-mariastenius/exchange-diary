@@ -110,6 +110,7 @@ h3 {
 .home-container {
   flex-direction: column;
   margin: 0 auto;
+  padding: 3rem 0;
   max-width: 1200px;
 }
 
@@ -310,7 +311,7 @@ input[type='radio'] {
 
 @media only screen and (max-width: 374px) {
 
-  .header-container,
+  .header-container, .home-container,
   .contact-form,
   .statement-container {
     width: 90%;
@@ -332,10 +333,10 @@ input[type='radio'] {
     gap: 1rem;
   }
 
-  .header-container,
+  .header-container, .home-container,
   .contact-form,
   .statement-container {
-    width: 90%;
+    width: 85%;
   }
 
   .contact-form {
@@ -358,7 +359,7 @@ input[type='radio'] {
     gap: 3rem;
   }
 
-  .header-container,
+  .header-container, .home-container,
   .contact-form,
   .statement-container {
     width: 550px;
@@ -379,9 +380,16 @@ input[type='radio'] {
 @media only screen and (min-width: 768px) {
 
   .header-container,
-  .contact-form,
-  .statement-container {
+  .contact-form {
     width: 600px;
+  }
+
+  .statement-container {
+    width: 700px;
+  }
+
+  .home-container {
+    width: 700px;
   }
 
   .statement-container {
@@ -406,11 +414,9 @@ input[type='radio'] {
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-  .nav-links {
-    gap: 3rem;
-  }
 
-  .header-container,
+
+  .header-container, .home-container,
   .contact-form,
   .statement-container {
     width: 900px;
@@ -444,15 +450,16 @@ input[type='radio'] {
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-  .nav-links {
-    gap: 3rem;
+  .home-container {
+    width: 1000px;
   }
 }
 
 @media only screen and (min-width: 1400px) {
-  /* .home-container {
-    padding: 4rem 15rem;
-  } */
+
+  .home-container {
+    width: 1500px;
+  }
 
   .blog-container,
   .blog-secondary-container {
