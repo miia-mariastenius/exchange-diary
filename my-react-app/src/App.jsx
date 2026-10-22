@@ -1,5 +1,5 @@
 import React from 'react'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import './css/App.css';
 import { Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar.jsx';
@@ -12,6 +12,21 @@ import Footer from './components/Footer.jsx';
 
 
 function App() {
+  const [showCookiesModal, setShowCookiesModal] = useState(false);
+
+  useEffect(() => {
+    // Check if the user has already accepted cookies
+    const cookiesAccepted = localStorage.getItem('cookiesAccepted')
+    if (!cookiesAccepted) {
+      setShowCookiesModal(true)
+    }
+  }, [])
+
+  const handleAcceptedCookies = () => {
+    // Dismiss the cookies modal and save the state in localStorage
+    localStorage.setItem('cookiesAccepted', 'true')
+    setShowCookiesModal(false)
+  }
 
   return (
     <>
@@ -20,6 +35,15 @@ function App() {
           <Navbar />
         </header>
         <main>
+          {showCookiesModal && (
+            <div className="cookies-modal">
+              <h1 className="cookies-modal-title">Cookie notice</h1>
+              <p>This website uses cookies to enhance your experience. By continuing to browse the site, you agree to our use of cookies.</p>
+              <div className="cookies-modal-button">
+                <button className="cookies-accept-button" onClick={handleAcceptedCookies}>Accept</button>
+              </div>
+            </div>
+          )}
           <Routes>
             <Route path="/" element={<MyExchange />} />
             <Route path="/months-1-2" element={<Months12 />} />
