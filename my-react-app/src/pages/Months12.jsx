@@ -1,3 +1,6 @@
+import React from 'react';
+import Accordion from '../components/Accordion.jsx';
+
 function Months12() {
   return (
     <div className="content">
@@ -5,14 +8,7 @@ function Months12() {
         <h1>Months 1-2</h1>
         <p className="text-style">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin luctus imperdiet erat in efficitur. Cras ex neque, dapibus nec malesuada in, sollicitudin vitae justo. Maecenas rutrum, sem a accumsan semper, nibh ligula ornare mauris, vel venenatis magna est eu ex.</p>
         <div className="accordion-container">
-          <div className="accordion-item">
-            <div className="accordion-header">
-              <h2>Title</h2>
-            </div>
-            <div className="accordion-content">
-              <p>This is the content for accordion.</p>
-            </div>
-          </div>
+         <Accordion />
         </div>
       </div>
       <div className="secondary-container">
