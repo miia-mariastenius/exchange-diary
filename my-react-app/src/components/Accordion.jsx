@@ -13,15 +13,23 @@ const Accordion = () => {
 
   return (
     <div className="accordion-item">
-      <div
-        onClick={() => setIsOpen(!isOpen)}
-        role="button"
-        tabIndex="0"
-        className="accordion-header">
-        <h2 className="accordion-title">{title}</h2>
-        <div className="accordion-icon">{isOpen ? <FaAngleDown aria-hidden="true" /> : <FaAngleUp aria-hidden="true" />}</div>
-      </div>
-      {isOpen && <div className="accordion-content">{content}</div>}
+      <h2 className="accordion-h2">
+        <button
+          type="button"
+          aria-expanded={isOpen}
+          aria-controls="accordion-content"
+          id="accordion"
+          onClick={() => setIsOpen(!isOpen)}
+          className="accordion-header">
+          <span className="accordion-title">{title}</span>
+          <span className="accordion-icon">{isOpen ? <FaAngleDown aria-hidden="true" /> : <FaAngleUp aria-hidden="true" />}</span>
+        </button>
+      </h2>
+      {isOpen && <div
+        id="accordion-content"
+        role="region"
+        aria-labelledby="accordion"
+        className="accordion-content">{content}</div>}
     </div>
   )
 }
