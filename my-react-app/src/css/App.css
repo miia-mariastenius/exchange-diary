@@ -353,6 +353,31 @@ input[type='radio'] {
   box-shadow: 0px 0px 33px 20px rgba(0, 0, 0, 0.25);
 }
 
+.cookies-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.cookies-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  margin-bottom: 1rem;
+}
+
+.cookies-close-button {
+  border: none;
+  background: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+}
+
 .cookies-modal-title {
   font-size: 1.5rem;
   margin-top: 0;
@@ -367,10 +392,16 @@ input[type='radio'] {
   margin: 1rem 0 0 0;
   padding: 1.2rem 4rem;
   border: none;
+  cursor: pointer;
   border-radius: 30px;
   text-decoration: none;
   font-weight: bold;
   box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.cookies-accept-button:hover {
+  background-color: var(--dark-bg-color);
+  color: #FFFFFF;
 }
 
 @media only screen and (max-width: 374px) {
