@@ -103,6 +103,12 @@ h3 {
   padding: 0 0 1rem 0;
 }
 
+:focus-visible {
+  outline: 2px solid var(--dark-bg-color);
+  border-radius: 4px;
+  outline-offset: 2px;
+}
+
 .secondary-container {
   background-color: var(--secondary-bg-color);
 }
@@ -147,6 +153,11 @@ h3 {
   text-decoration: none;
   font-weight: bold;
   box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.read-more-button:hover{
+  background-color: var(--dark-bg-color);
+  cursor: pointer;
 }
 
 .tertiary-container {
@@ -208,11 +219,16 @@ label {
 input,
 textarea {
   padding: 0.5rem;
-  /* margin-bottom: 1rem; */
   margin-top: 0.3rem;
   border: 1px solid #000000;
   border-radius: 8px;
   font-family: var(--font-family);
+}
+
+input:focus,
+textarea:focus {
+  outline: 2px solid #FFFFFF;
+  outline-offset: 2px;
 }
 
 .form-input {
@@ -256,6 +272,16 @@ fieldset {
   border-radius: 30px;
   text-decoration: none;
   box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.submit-button:focus {
+  outline: 2px solid #FFFFFF;
+  outline-offset: 2px;
+}
+
+.submit-button:hover {
+  background-color: #8cbc9f;
+  cursor: pointer;
 }
 
 .accordion-header {
@@ -350,6 +376,12 @@ fieldset {
   box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
+.blog-prev-button:hover,
+.blog-next-button:hover {
+  background-color: var(--dark-bg-color);
+  color: #FFFFFF;
+}
+
 .statement-container {
   margin: 0 auto;
   padding: 3rem 0;
@@ -381,6 +413,13 @@ fieldset {
   border-radius: 10px;
   text-decoration: none;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.instagram-button:hover,
+.twitter-button:hover {
+  background-color: var(--button-color);
+  color: #FFFFFF;
+  cursor: pointer;
 }
 
 .cookies-modal {
