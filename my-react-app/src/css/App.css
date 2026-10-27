@@ -157,7 +157,6 @@ h3 {
 
 .contact-form {
   align-items: center;
-  gap: 1rem;
   margin: 0 auto;
   padding: 4rem 0;
 }
@@ -190,21 +189,63 @@ label {
   flex-direction: row;
 }
 
-.radio-group {
+.form-div {
+  padding-bottom: 1rem;
+}
+
+.radio-content {
   flex-direction: column;
+}
+
+.radio-group {
+  margin-top: 0.3rem;
+}
+
+.form-legend{
+  margin-bottom: 0.3rem;
 }
 
 input,
 textarea {
   padding: 0.5rem;
-  margin-bottom: 1rem;
+  /* margin-bottom: 1rem; */
   margin-top: 0.3rem;
   border: 1px solid #000000;
   border-radius: 8px;
+  font-family: var(--font-family);
+}
+
+.form-input {
+  width: 100%;
+  box-sizing: border-box;
 }
 
 input[type='radio'] {
   accent-color: #232323;
+  margin-right: 1rem;
+}
+
+.error-message {
+  display: flex;
+  color: #FF6B6B;
+  margin-top: 0.2rem;
+}
+
+.success-message {
+  color: #7EA98F;
+  font-size: 1.3rem;
+  font-weight: bold;
+  padding-top: 1rem;
+}
+
+.success-icon {
+  margin-right: 0.2rem;
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
 }
 
 .submit-button {
