@@ -10,6 +10,7 @@ import Months56 from './pages/Months56.jsx';
 import SaavutettavuusSeloste from './pages/SaavutettavuusSeloste.jsx';
 import Footer from './components/Footer.jsx';
 import CookiesModal from './components/CookiesModal.jsx';
+import ScrollToTo from './components/ScrollToTop.jsx';
 
 
 function App() {
@@ -67,6 +68,7 @@ function App() {
   return (
     <>
       <div className="main-app">
+        <ScrollToTo />
         {showCookiesModal && (
           <CookiesModal handleAcceptedCookies={handleAcceptedCookies} modalRef={modalRef} />
         )}
