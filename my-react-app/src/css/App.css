@@ -135,6 +135,22 @@ h3 {
   min-width: 200px;
 }
 
+.card:hover {
+  border: 1px solid var(--dark-bg-color);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px 10px 0 0;
+}
+
+.card a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
 .card-text {
   display: flex;
   flex-direction: column;
@@ -155,7 +171,7 @@ h3 {
   box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
-.read-more-button:hover{
+.card:hover .read-more-button{
   background-color: var(--dark-bg-color);
   cursor: pointer;
 }
@@ -646,7 +662,7 @@ fieldset {
   } */
 
   .button-container {
-    padding: 0rem 9rem 3rem 9rem;
+    padding: 0rem 7rem 3rem 7rem;
   }
 
   .blog-item {
@@ -686,5 +702,9 @@ fieldset {
   .blog-container,
   .blog-secondary-container {
     padding: 4rem 9rem;
+  }
+
+  .button-container {
+    padding: 0rem 9rem 3rem 9rem;
   }
 }

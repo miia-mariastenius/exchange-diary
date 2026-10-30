@@ -1,5 +1,6 @@
 import React from 'react';
 import Card from '../components/Card.jsx';
+import { diaryEntries } from '../components/Card.jsx';
 import ContactForm from '../components/ContactForm.jsx';
 
 function MyExchange() {
@@ -13,9 +14,16 @@ function MyExchange() {
         <div className="home-container">
           <h2>The duration of my exchange is chopped into chunks</h2>
           <div className="card-container">
-            <Card />
-            <Card />
-            <Card />
+            {diaryEntries.map((entry) => {
+              return <Card
+                photo={entry.photo}
+                title={entry.title}
+                text={entry.text}
+                alt={entry.alt}
+                buttonText={entry.buttonText}
+                path={entry.path}
+              />
+            })}
           </div>
         </div>
       </div>
