@@ -382,7 +382,6 @@ fieldset {
   background-color: var(--button-color);
   color: #FFFFFF;
   width: 200px;
-  height: 60px;
   margin-top: 1rem;
   padding: 1rem 1rem;
   border: none;
@@ -390,6 +389,48 @@ fieldset {
   text-decoration: none;
   font-weight: bold;
   box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: center;
+  font-size: 0.9rem;
+}
+
+.blog-button {
+  background-color: var(--button-color);
+  color: #FFFFFF;
+  width: 200px;
+  height: 60px;
+  margin-top: 1rem;
+  border: none;
+  border-radius: 40px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: center;
+  font-size: 0.9rem;
+}
+
+.blog-button-disabled {
+  background-color: rgb(30, 30, 30, 0.5);
+  color: #FFFFFF;
+  width: 200px;
+  height: 60px;
+  margin-top: 1rem;
+  border: none;
+  border-radius: 40px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: center;
+  font-size: 0.9rem;
+  cursor: default;
+}
+
+.blog-button-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .blog-prev-button:hover,

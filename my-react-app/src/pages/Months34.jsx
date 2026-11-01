@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Accordion from '../components/Accordion.jsx';
 
 function Months34() {
@@ -45,8 +46,12 @@ function Months34() {
           </div>
         </div>
         <div className="button-container">
-          <button className="blog-prev-button" type="button">Previous adventures</button>
-          <button className="blog-next-button" type="button">Next adventures</button>
+          <Link className="blog-button" to="/months-1-2" aria-label="Read about previous adventures">
+            <span className="blog-button-text">Previous adventures</span>
+          </Link>
+          <Link className="blog-button" to="/months-5-6" aria-label="Read about next adventures">
+            <span className="blog-button-text">Next adventures</span>
+          </Link>
         </div>
       </div>
     </div>
