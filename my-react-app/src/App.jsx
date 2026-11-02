@@ -65,6 +65,20 @@ function App() {
     return () => document.removeEventListener("keydown", handleKeyDown)
   }, [showCookiesModal, handleAcceptedCookies])
 
+  const links = [
+    {
+      url: "/months-1-2",
+      text: "Month 1-2"
+    },
+    {
+      url: "/months-3-4",
+      text: "Month 3-4"
+    },
+    {
+      url: "/months-5-6",
+      text: "Month 5-6"
+    }]
+
   return (
     <>
       <div className="main-app">
@@ -73,7 +87,15 @@ function App() {
           <CookiesModal handleAcceptedCookies={handleAcceptedCookies} modalRef={modalRef} />
         )}
         <header>
-          <Navbar />
+          <Navbar buttonText="What happened" content={
+            <>
+              {links.map(link => (
+                <a href={link.url} key={link.url}>
+                  {link.text}
+                </a>
+              ))}
+            </>
+          } />
         </header>
         <main>
           <Routes>
